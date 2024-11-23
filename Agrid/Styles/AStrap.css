@@ -1,0 +1,231 @@
+/***********************************************************************************************************************************************************************************************************/
+/*Import*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Root*/
+/*Root*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*General Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background: var(--LoginBackgroundImage);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 20px;
+  overflow: hidden; }
+
+.form-container_ArClass {
+  display: flex;
+  width: var(--LoginFrameWidth);
+  height: var(--LoginFrameHeight);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(20px); }
+
+/*First Colum*/
+.col-1_ArClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 55%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  border-radius: 0 30% 20% 0;
+  transition: border-radius 0.3s; }
+
+.form-image-main_ArClass {
+  position: relative;
+  width: var(--LoginLogoWidth); }
+
+/*First Colum*/
+/*Second Colum*/
+.col-2_ArClass {
+  position: relative;
+  width: var(--LoginFrameSize);
+  padding: 20px;
+  overflow: hidden; }
+
+.btn-box_ArClass {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px; }
+
+.btn {
+  font-weight: 500;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: .2s; }
+
+.btn-1_ArClass {
+  background: var(--LoginBtnColor); }
+
+.btn:hover {
+  opacity: 0.75; }
+
+/* Login Form*/
+.login-form_ArClass {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 4vw;
+  transition: .3s; }
+
+/* Register Form*/
+.register-form_ArClass {
+  position: absolute;
+  left: -50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 4vw;
+  transition: .3s; }
+
+.register-form_ArClass .form-title_ArClass {
+  margin-block: var(--LoginCreateSpacing); }
+
+.form-title_ArClass {
+  margin: var(--LoginSignInSpacing);
+  color: #fff;
+  font-size: var(--LoginSignInSignUpSize);
+  font-weight: 600; }
+
+.form-inputs_ArClass {
+  width: 100%; }
+
+.input-box_ArClass {
+  position: relative; }
+
+.input-field_ArClass {
+  width: 100%;
+  height: var(--LoginInputBoxSize);
+  padding: 0 15px;
+  margin: var(--LoginInputBoxSpace);
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+
+::placeholder {
+  color: #fff;
+  font-size: 15px; }
+
+.input-box_ArClass .icon_ArClass {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #fff; }
+
+.forgot-pass_ArClass {
+  display: flex;
+  justify-content: center;
+  gap: 5px; }
+
+.forgot-pass_ArClass a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px; }
+
+.forgot-pass_ArClass a:hover {
+  text-decoration: underline; }
+
+.input-submit_ArClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 55px;
+  padding: 0 15px;
+  margin: 10px 0;
+  color: #fff;
+  background: var(--LoginBtnColor);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: .3s; }
+
+.input-submit_ArClass:hover {
+  gap: 15px; }
+
+.social-login_ArClass {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px; }
+
+.social-login_ArClass i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: .2sec; }
+
+.social-login_ArClass i:hover {
+  transform: scale(0.9); }
+
+/*General Styles*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
+/*Mobile*/
+@media all and (max-width: 641px) {
+  .form-container_ArClass {
+    width: 400px; }
+
+  .col-1_ArClass {
+    display: none; }
+
+  .col-2_ArClass {
+    width: 100%; } }
+/*Mobile*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Tablet*/
+/*Tablet*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Desktop*/
+/*Desktop*/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
+
+/*# sourceMappingURL=AStrap.css.map */
