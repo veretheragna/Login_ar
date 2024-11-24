@@ -257,41 +257,20 @@ body {
   /*To modify the size of SignIn and sign up text*/
   --LoginSignInSpacing: 40px 20px;
   /*To modify the space above and below the SignIn*/
-  --LoginInputBoxSize: 55px;
-  /*To modify the Input field box/Signin box*/
-  --LoginInputBoxSpace: 10px 0;
-  /*To modify the space beetween each input(fill in box) box*/
-  --LoginBtnColor: #21264D;
-  /*To provide backround color of submit/create account) (input-submit)*/
-  --LoginTextColor: white;
-  /*To change text color) (btn_ArClass, form-title_ArClass*/
-  /*SignUp / Create Account Section*/
   --LoginCreateSpacing: 40px 0px;
   /*To modify the space above and below Create account*/
-  --LoginInputRegisterBoxSize: 55px;
-  /*To modify the Input field box/Create account box */
-  --LoginInputRegisterBoxSpace: 10px 0;
+  --LoginInputBoxSize: 55px;
+  /*To modify the Input field box*/
+  --LoginInputBoxSpace: 10px 0;
   /*To modify the space beetween each input(fill in box) box*/
-  /*Social Btn*/
-  --LoginSocialHeight: 40px;
-  /*To modify the height of the social media links*/
-  --LoginSocialWidth: 40px;
-  /*To modify the width of the social media links*/ }
+  --LoginBtnColor: red;
+  /*To provide backround color of submit/create account) (input-submit)*/
+  --LoginTextColor: white;
+  /*To change text color) (btn_ArClass, form-title_ArClass*/ }
 
 /*1. if you wanted to remove the Right colom with the image delete or make the col-1 a comment on the index/html page
  2. set up --LoginFrameWidth: 400px
- 3: set up --LoginFrameSize: 100%
-
-If you wanted to remove the social media links circles just delete or comment out 
-	<div class="social-login_ArClass">
-		<i class="bx bxl-google_ArClass"></i>
-		<i class="bx bxl-facebook_ArClass"></i>
-		<i class="bx bxl-twitetr_ArClass"></i>
-		<i class="bx bxl-github_ArClass"></i>
-	</div>
-on both <!---Login Form---> and <!---Register Form---> on the Html
-	
- */
+ 3: set up --LoginFrameSize: 100%*/
 /*Root*/
 /***********************************************************************************************************************************************************************************************************/
 /***********************************************************************************************************************************************************************************************************/
@@ -315,4 +294,4 @@ on both <!---Login Form---> and <!---Register Form---> on the Html
 /*Media Queries*/
 /***********************************************************************************************************************************************************************************************************/
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=Login.css.map */

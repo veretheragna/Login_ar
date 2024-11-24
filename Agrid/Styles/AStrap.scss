@@ -33,7 +33,9 @@ body{
 	justify-content: center;
 	min-height: 100vh;
 	padding: 0 20px;
-	overflow: hidden;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+  	overflow-y: scroll; /* Add vertical scrollbar */
+  	box-sizing: border-box;
 }
 .form-container_ArClass{
 	display: flex;
@@ -121,6 +123,13 @@ body{
 .register-form_ArClass .form-title_ArClass{
 	margin-block: var(--LoginCreateSpacing);
 }
+.register-form_ArClass .input-field_ArClass{
+	height: var(--LoginInputRegisterBoxSize);
+	margin: var(--LoginInputRegisterBoxSpace);
+}	
+.register-form_ArClass .input-submit_ArClass{
+	height: var(--LoginInputRegisterBoxSize);
+}
 
 .form-title_ArClass{
 	margin: var(--LoginSignInSpacing);
@@ -177,7 +186,7 @@ body{
 	justify-content: center;
 	gap: 10px;
 	width: 100%;
-	height: 55px;
+	height: var(--LoginInputBoxSize);
 	padding: 0 15px;
 	margin: 10px 0;
 	color: #fff;
@@ -200,8 +209,8 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 40px;
-	width: 40px;
+	height: var(--LoginSocialHeight);
+	width: var(--LoginSocialWidth);
 	color: #fff;
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 50%;
