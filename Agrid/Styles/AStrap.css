@@ -1,6 +1,7 @@
 /***********************************************************************************************************************************************************************************************************/
 /*Import*/
 /***********************************************************************************************************************************************************************************************************/
+/*flex-shirk:0;*/
 /***********************************************************************************************************************************************************************************************************/
 /*Root*/
 /*Root*/
@@ -19,58 +20,40 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 0 20px;
+  height: 100%;
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
   overflow-y: scroll;
   /* Add vertical scrollbar */
   box-sizing: border-box; }
 
+#formDisplay_ArId {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%); }
+
 .form-container_ArClass {
   display: flex;
+  position: relative;
+  flex-flow: column;
   width: var(--LoginFrameWidth);
   height: var(--LoginFrameHeight);
+  flex-shirk: 0;
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 30px;
   backdrop-filter: blur(20px); }
 
-/*First Colum*/
-.col-1_ArClass {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 55%;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(30px);
-  border-radius: 0 30% 20% 0;
-  transition: border-radius 0.3s; }
-
-.form-image-main_ArClass {
-  position: relative;
-  width: var(--LoginLogoWidth); }
-
-/*First Colum*/
-/*Second Colum*/
-.col-2_ArClass {
-  position: relative;
-  width: var(--LoginFrameSize);
-  padding: 20px;
-  overflow: hidden; }
-
 .btn-box_ArClass {
   display: flex;
+  position: relative;
   justify-content: center;
-  gap: 10px;
+  height: 25px;
   margin-top: 20px; }
 
 .btn {
   font-weight: 500;
-  padding: 5px 30px;
+  padding: 7px 40px;
   border: none;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.2);
@@ -85,39 +68,57 @@ body {
 .btn:hover {
   opacity: 0.75; }
 
+.innerbox_ArClass {
+  position: relative display flex;
+  flex-shirk: 0;
+  width: 800px;
+  box-sizing: border-box; }
+
+#innerbox_ArId {
+  display: flex;
+  flex-flow: row;
+  box-sizing: border-box; }
+
+/*First Colum*/
+.col-1_ArClass {
+  position: relative;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 0 4vw;
+  transition: .3s; }
+
+.form-image-main_ArClass {
+  position: relative;
+  width: var(--LoginLogoWidth); }
+
+/*First Colum*/
+/*Second Colum*/
+.col-2_ArClass {
+  position: relative;
+  width: 50%;
+  padding: 5px;
+  display: none; }
+
 /* Login Form*/
 .login-form_ArClass {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 4vw;
+  padding: 0 5%;
   transition: .3s; }
 
-/* Register Form*/
 .register-form_ArClass {
-  position: absolute;
-  left: -50%;
-  transform: translateX(-50%);
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 4vw;
+  padding: 0 5%;
   transition: .3s; }
-
-.register-form_ArClass .form-title_ArClass {
-  margin-block: var(--LoginCreateSpacing); }
-
-.register-form_ArClass .input-field_ArClass {
-  height: var(--LoginInputRegisterBoxSize);
-  margin: var(--LoginInputRegisterBoxSpace); }
-
-.register-form_ArClass .input-submit_ArClass {
-  height: var(--LoginInputRegisterBoxSize); }
 
 .form-title_ArClass {
   margin: var(--LoginSignInSpacing);
@@ -148,13 +149,13 @@ body {
   color: #fff;
   font-size: 15px; }
 
-.input-box_ArClass .icon_ArClass {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  color: #fff; }
-
+/*.input-box_ArClass .icon_ArClass{
+	position: relative;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	color: #fff;
+}*/
 .forgot-pass_ArClass {
   display: flex;
   justify-content: center;
@@ -200,6 +201,7 @@ body {
   height: var(--LoginSocialHeight);
   width: var(--LoginSocialWidth);
   color: #fff;
+  margin: 10px 0;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   cursor: pointer;
@@ -215,15 +217,6 @@ body {
 /*Media Queries*/
 /***********************************************************************************************************************************************************************************************************/
 /*Mobile*/
-@media all and (max-width: 641px) {
-  .form-container_ArClass {
-    width: 400px; }
-
-  .col-1_ArClass {
-    display: none; }
-
-  .col-2_ArClass {
-    width: 100%; } }
 /*Mobile*/
 /***********************************************************************************************************************************************************************************************************/
 /***********************************************************************************************************************************************************************************************************/
@@ -238,5 +231,11 @@ body {
 /***********************************************************************************************************************************************************************************************************/
 /*Media Queries*/
 /***********************************************************************************************************************************************************************************************************/
+@media all and (max-height: 700px) {
+  #formDisplay_ArId {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -35%); } }
 
 /*# sourceMappingURL=AStrap.css.map */

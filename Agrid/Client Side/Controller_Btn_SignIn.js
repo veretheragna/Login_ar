@@ -1,5 +1,5 @@
 /*Import*/
-import {loginBtn, registerBtn, loginform, registerform} from "./Elements_Index.js";
+import {loginBtn, registerBtn, loginform, registerform, frameBoxSignIn, frameBoxSignUp, frameSignIn, frameSignUp} from "./Elements_Index.js";
 /*Import*/ 
 
 
@@ -8,13 +8,11 @@ function controller_Btn_SignIn(color){
     loginBtn.style.backgroundColor = color;
     registerBtn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
 
-    loginform.style.left = "50%";
-    registerform.style.left = "-50%";
+    frameSignIn.style.left = "0%";
+    frameSignUp.style.right = "0%";
 
-    loginform.style.opacity = 1;
-    registerform.style.opacity = 0;
-
-    document.querySelector(".col-1").style.borderRadius = "0 30% 20% 0";
+    frameSignIn.style.display = "block";
+    frameSignUp.style.display = "none";
 }
 
 /*Controller*/
