@@ -61,7 +61,7 @@ body{
 	border: none;
 	border-radius: 30px;
 	background: rgba(255, 255, 255, 0.2);
-	color: #fff;
+	color: var(--LoginTextColor);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 	transition: .3s;
@@ -78,13 +78,10 @@ body{
 	display flex;
 	flex-shirk: 0;
 	width: 800px;
-	box-sizing: border-box;
-}
-#innerbox_ArId{
-	display: flex;
 	flex-flow: row;
 	box-sizing: border-box;
 }
+
 /*First Colum*/
 .col-1_ArClass{
 	position: relative;
@@ -131,7 +128,7 @@ body{
 }
 .form-title_ArClass{
 	margin: var(--LoginSignInSpacing);
-	color: #fff;
+	color: var(--LoginTextColor);
 	font-size: var(--LoginSignInSignUpSize);
 	font-weight: 600;
 }
@@ -155,7 +152,7 @@ body{
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 ::placeholder{
-	color: #fff;
+	color: var(--LoginTextColor);
 	font-size: 15px;
 }
 .forgot-pass_ArClass{
@@ -164,7 +161,7 @@ body{
 	gap: 5px;
 }
 .forgot-pass_ArClass a{
-	color: #fff;
+	color: var(--LoginTextColor);
 	text-decoration: none;
 	font-size: 14px;
 }
@@ -180,7 +177,7 @@ body{
 	height: var(--LoginInputBoxSize);
 	padding: 0 15px;
 	margin: 10px 0;
-	color: #fff;
+	color: var(--LoginTextColor);
 	background: var(--LoginBtnColor);
 	border: none;
 	border-radius: 10px;
@@ -200,8 +197,8 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: var(--LoginSocialHeight);
-	width: var(--LoginSocialWidth);
+	height: var(--LoginSocialSize);
+	width: var(--LoginSocialSize);
 	color: #fff;
 	margin: 10px 0;
 	background: rgba(255, 255, 255, 0.2);
@@ -254,11 +251,3 @@ body{
 
 /*Media Queries*/
 /***********************************************************************************************************************************************************************************************************/
-@media all and (max-height:700px){
-	/*#formDisplay_ArId{
-		position: absolute;
-	 	top: 50%;
-	 	left: 50%;
-	 	transform: translate(10%,);
-	}*/
-}
