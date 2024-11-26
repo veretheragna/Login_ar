@@ -1,0 +1,145 @@
+* Rostrap Framework Rules
+	• Always Add the Agrid Folder & src Folder into Project Folder
+	• Follow the Path Order when creating a New Page Folder (Project Folder/Module Folders/Files Folders)
+	• Just copy the Layout design on your scss file and import the Astrap.scss
+		ex. (@import "../../Agrid/Styles/AStrap";)
+
+* For JavaScript How to
+	• To change the color of SignIn/SignUp (ctrl+f desired color) and change it to your prefered color.
+	• also add the scrpit at the bottom, for btn SignIn and SignUp
+		<script type="module" src="./Agrid/Client Side/Controller_Btn_SignIn.js"></script>
+		<script type="module" src="./Agrid/Client Side/Controller_Btn_SignUp.js"></script>
+
+
+* How to use Layout Login design
+	--LoginFrameWidth: 400px;      /*To resize width the cointainer of col-1_ArClass/col-2_ArClass*/
+	--LoginFrameHeight: auto;      /*To resize height the cointainer of col-1_ArClass/col-2_ArClass*/
+	--LoginFrameSize: 100%;       
+	--LoginSignInSignUpSize: 28px;  /*To modify the size of SignIn and sign up text*/
+	--LoginSignInSpacing: 40px 20px;/*To modify the space above and below the form-title_ArClass / form-title_ArClass*/
+	--LoginInputBoxSize: 50px;      /*To modify the Input field box (input-box_ArClass) (input-submit_ArClass) */
+	--LoginInputBoxSpace: 10px 0;   /*To modify the space beetween each input(fill in box) box*/
+	--LoginBtnColor: #21264D;       /*To provide backround color of submit/create account) (input-submit)*/
+	--LoginTextColor: white;        /*To change text color (form-title_ArClass) (forgot-pass_ArClass) (input-submit_ArClass)*/
+	
+
+	/*Social Btn*/
+	--LoginSocialHeight: 40px; /*To modify the height of the (social-login_ArClass)*/
+	--LoginSocialWidth: 40px;  /*To modify the width of the (social-login_ArClass)*/
+
+	• To change the color of the SingIn and SignUp Btn (ctrl+F) "desired color"*
+	• If you wanted to modify the logo(pic) on image under col-1(ctrl+f col col-1) just put ng name of the file.
+	• To change the backround (ctrl+f body) input the desired backround.
+
+* If you wanted to remove the social media links circles just delete or comment out 
+	<div class="social-login_ArClass">
+		<i class="bx bxl-google_ArClass"></i>
+		<i class="bx bxl-facebook_ArClass"></i>
+		<i class="bx bxl-twitetr_ArClass"></i>
+		<i class="bx bxl-github_ArClass"></i>
+	</div>
+  on both <!---Login Form---> and <!---Register Form---> on the Html
+	
+
+	• Structure
+	<body style="--LoginBackgroundImage: url('../../src/ecommerce.png')">
+		<div class="form-container_ArClass">
+			<div class="btn-box_ArClass">
+				<button class="btn btn-1_ArClass" onclick="controller_Btn_SignIn('#21264D')" id="login_ArId">Sign In</button>
+				<button class="btn btn-2_ArClass" onclick="controller_Btn_SignUp('#21264D')" id="register_ArId">Sign Up</button>
+			</div>
+			<!---Login Form--->
+			<div class="innerbox_ArClass" id="innerbox_ArId">
+				<div class="col-1_ArClass">
+					<form onsubmit="controller_Btn_Login(event)">
+						<div class="login-form_ArClass">
+							<div class="form-title_ArClass">
+								<span>Sign In</span>
+							</div>
+							<div class="form-inputs_ArClass">
+								<div class="input-box_ArClass">
+									<input type="text" id="username_ArId" class="input-field_ArClass" placeholder="Username" required>
+									<i class="bx bx-user icon_ArClass"></i>
+								</div>
+								<div class="input-box_ArClass">
+									<input type="password" id="password_ArId" class="input-field_ArClass" placeholder="Password" required>
+									<i class="bx bx-lock-alt icon_ArClass"></i>
+								</div>
+								<div class="forgot-pass_ArClass">
+									<a href="#">Forgot Password?</a>
+								</div>
+								<div class="input-box_ArClass">
+									<button type="submit" class="input-submit_ArClass">
+										<span>Sign In</span>
+										<i class="bx bx-right-arrow-alt_ArClass"></i>
+									</button>
+								</div>
+							</div>
+							<div class="social-login_ArClass">
+								<i class="bx bxl-google_ArClass"></i>
+								<i class="bx bxl-facebook_ArClass"></i>
+								<i class="bx bxl-twitetr_ArClass"></i>
+								<i class="bx bxl-github_ArClass"></i>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-2_ArClass">
+					<!---Register Form--->
+					<form>
+						<div class="register-form_ArClass">
+							<div class="form-title_ArClass">
+								<span>Create Account</span>
+							</div>
+							<div class="form-inputs_ArClass">
+								<div class="input-box_ArClass">
+									<input type="text" class="input-field_ArClass" placeholder="Email" required>
+									<i class="bx bx-envelope icon_ArClass"></i>
+								</div>
+								<div class="input-box_ArClass">
+									<input type="text" class="input-field_ArClass" placeholder="Email" required>
+									<i class="bx bx-envelope icon_ArClass"></i>
+								</div>
+								<div class="input-box_ArClass">
+									<input type="text" class="input-field_ArClass" placeholder="Email" required>
+									<i class="bx bx-envelope icon_ArClass"></i>
+								</div>
+								<div class="input-box_ArClass">
+									<input type="text" class="input-field_ArClass" placeholder="Email" required>
+									<i class="bx bx-envelope icon_ArClass"></i>
+								</div>
+								<div class="input-box_ArClass">
+									<input type="text" class="input-field_ArClass" placeholder="Email" required>
+									<i class="bx bx-envelope icon_ArClass"></i>
+								</div>
+								<div class="input-box_ArClass">
+									<input type="password" class="input-field_ArClass" placeholder="Password" required>
+									<i class="bx bx-lock-alt icon_ArClass"></i>
+								</div>
+								<div class="forgot-pass_ArClass">
+									<a href="#">Forgot Password?</a>
+								</div>
+								<div class="input-box_ArClass">
+									<button class="input-submit_ArClass">
+										<span>Create Account</span>
+										<i class="bx bx-right-arrow-alt_ArClass"></i>
+									</button>
+								</div>
+							</div>
+							<div class="social-login_ArClass">
+								<i class="bx bxl-google_ArClass"></i>
+								<i class="bx bxl-facebook_ArClass"></i>
+								<i class="bx bxl-twitetr_ArClass"></i>
+								<i class="bx bxl-github_ArClass"></i>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>	
+		
+		
+		<script type="module" src="./Agrid/Client Side/Controller_Btn_SignIn.js"></script>
+		<script type="module" src="./Agrid/Client Side/Controller_Btn_SignUp.js"></script>
+	</body>

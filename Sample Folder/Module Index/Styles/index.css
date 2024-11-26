@@ -1,0 +1,299 @@
+/***********************************************************************************************************************************************************************************************************/
+/*Import*/
+/***********************************************************************************************************************************************************************************************************/
+/*Import*/
+/***********************************************************************************************************************************************************************************************************/
+/*flex-shirk:0;*/
+/***********************************************************************************************************************************************************************************************************/
+/*Root*/
+/*Root*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*General Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background: var(--LoginBackgroundImage);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  overflow-y: scroll;
+  /* Add vertical scrollbar */
+  box-sizing: border-box; }
+
+.form-container_ArClass {
+  display: flex;
+  position: relative;
+  align-content: center;
+  flex-flow: column;
+  width: var(--LoginFrameWidth);
+  height: var(--LoginFrameHeight);
+  flex-shirk: 0;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(20px); }
+
+.btn-box_ArClass {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 25px;
+  margin-top: 20px; }
+
+.btn {
+  font-weight: 500;
+  padding: 7px 40px;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: .3s; }
+
+.btn-1_ArClass {
+  background: var(--LoginBtnColor); }
+
+.btn:hover {
+  opacity: 0.75; }
+
+.innerbox_ArClass {
+  position: relative display flex;
+  flex-shirk: 0;
+  width: 800px;
+  box-sizing: border-box; }
+
+#innerbox_ArId {
+  display: flex;
+  flex-flow: row;
+  box-sizing: border-box; }
+
+/*First Colum*/
+.col-1_ArClass {
+  position: relative;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 0 4vw;
+  transition: .5s; }
+
+.form-image-main_ArClass {
+  position: relative;
+  width: var(--LoginLogoWidth); }
+
+/*First Colum*/
+/*Second Colum*/
+.col-2_ArClass {
+  position: relative;
+  width: 50%;
+  padding: 5px;
+  display: none; }
+
+/* Login Form*/
+.login-form_ArClass {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+  transition: .5s; }
+
+.register-form_ArClass {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+  transition: .3s; }
+
+.form-title_ArClass {
+  margin: var(--LoginSignInSpacing);
+  color: #fff;
+  font-size: var(--LoginSignInSignUpSize);
+  font-weight: 600; }
+
+.form-inputs_ArClass {
+  width: 100%; }
+
+.input-box_ArClass {
+  position: relative; }
+
+.input-field_ArClass {
+  width: 100%;
+  height: var(--LoginInputBoxSize);
+  padding: 0 15px;
+  margin: var(--LoginInputBoxSpace);
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+
+::placeholder {
+  color: #fff;
+  font-size: 15px; }
+
+.forgot-pass_ArClass {
+  display: flex;
+  justify-content: center;
+  gap: 5px; }
+
+.forgot-pass_ArClass a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px; }
+
+.forgot-pass_ArClass a:hover {
+  text-decoration: underline; }
+
+.input-submit_ArClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: var(--LoginInputBoxSize);
+  padding: 0 15px;
+  margin: 10px 0;
+  color: #fff;
+  background: var(--LoginBtnColor);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: .3s; }
+
+.input-submit_ArClass:hover {
+  gap: 15px; }
+
+.social-login_ArClass {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px; }
+
+.social-login_ArClass i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--LoginSocialHeight);
+  width: var(--LoginSocialWidth);
+  color: #fff;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: .2sec; }
+
+.social-login_ArClass i:hover {
+  transform: scale(0.9); }
+
+/*General Styles*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
+/*Mobile*/
+/*Mobile*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Tablet*/
+/*Tablet*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Desktop*/
+/*Desktop*/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
+@media all and (max-height: 700px) {
+  /*#formDisplay_ArId{
+  	position: absolute;
+   	top: 50%;
+   	left: 50%;
+   	transform: translate(10%,);
+  }*/ }
+/*Import*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Root*/
+:root {
+  --LoginFrameWidth: 400px;
+  /*To resize width the cointainer of Col-1/col-2*/
+  --LoginFrameHeight: auto;
+  /*To resize height the cointainer of Col-1/col-2*/
+  --LoginLogoWidth: 300px;
+  /*To modify the width of your logo on col-1(left side)*/
+  --LoginFrameSize: 100%;
+  /*To modify the size if you wanted to remove the col-1, make it 100%*/
+  --LoginSignInSignUpSize: 28px;
+  /*To modify the size of SignIn and sign up text*/
+  --LoginSignInSpacing: 20px 10px;
+  /*To modify the space above and below the SignIn/Create account*/
+  --LoginInputBoxSize: 50px;
+  /*To modify the Input field box signin/create account*/
+  --LoginInputBoxSpace: 10px 0;
+  /*To modify the space beetween each input(fill in box) box*/
+  --LoginBtnColor: #21264D;
+  /*To provide backround color of submit/create account) (input-submit)*/
+  --LoginTextColor: white;
+  /*To change text color) (btn_ArClass, form-title_ArClass*/
+  /*Social Btn*/
+  --LoginSocialHeight: 40px;
+  /*To modify the height of the social media links*/
+  --LoginSocialWidth: 40px;
+  /*To modify the width of the social media links*/ }
+
+/*
+If you wanted to remove the social media links circles just delete or comment out 
+	<div class="social-login_ArClass">
+		<i class="bx bxl-google_ArClass"></i>
+		<i class="bx bxl-facebook_ArClass"></i>
+		<i class="bx bxl-twitetr_ArClass"></i>
+		<i class="bx bxl-github_ArClass"></i>
+	</div>
+on both <!---Login Form---> and <!---Register Form---> on the Html
+	
+ */
+/*Root*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*General Styles*/
+/*General Styles*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
+/*Mobile*/
+/*Mobile*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Tablet*/
+/*Tablet*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Desktop*/
+/*Desktop*/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
+
+/*# sourceMappingURL=index.css.map */
