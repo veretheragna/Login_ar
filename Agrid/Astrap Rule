@@ -5,48 +5,52 @@
 		ex. (@import "../../Agrid/Styles/AStrap";)
 
 * For JavaScript How to
-	• To change the color of SignIn/SignUp (ctrl+f desired color) and change it to your prefered color.
+	• To change the color of SignIn/SignUp (ctrl+f "desired color") and change it to your prefered color.
 	• also add the scrpit at the bottom, for btn SignIn and SignUp
 		<script type="module" src="./Agrid/Client Side/Controller_Btn_SignIn.js"></script>
 		<script type="module" src="./Agrid/Client Side/Controller_Btn_SignUp.js"></script>
 
 
 * How to use Layout Login design
-	--LoginFrameWidth: 400px;      /*To resize width the cointainer of col-1_ArClass/col-2_ArClass*/
-	--LoginFrameHeight: auto;      /*To resize height the cointainer of col-1_ArClass/col-2_ArClass*/     
+	--LoginFrameWidth: 900px;      /*To resize width the cointainer of (rightLogo_ArClass)(innerbox_ArClass)*/
+	--LoginFrameHeight: auto;      /*To resize height the cointainer of (rightLogo_ArClass)(innerbox_ArClass)*/     
+	--LoginLogoWidth: 400px;    	/*To modify the width of your logo on (form-image-main)*/
+	--LoginLogoRightWidth: 55%;		/*to customize the size of the container Logo (rightLogo_ArClass)*/
+	--LoginLogoLeftWidth: 45%;		/*to customize the size of the container SignIn/SignUp (innerbox_ArClass)*/
 	--LoginSignInSignUpSize: 28px;  /*To modify the size of SignIn and Create Account(form-title_ArClass > span) */
-	--LoginSignInSpacing: 40px 20px;/*To modify the space above and below the form-title_ArClass / form-title_ArClass*/
+	--LoginSignInSpacing: 40px 20px;/*To modify the space above and below the (form-title_ArClass) / (form-title_ArClass)*/
 	--LoginInputBoxSize: 50px;      /*To modify the Input field box (input-box_ArClass) (input-submit_ArClass) */
 	--LoginInputBoxSpace: 10px 0;   /*To modify the space beetween each input(fill in box) box*/
-	--LoginBtnColor: #21264D;       /*To provide backround color of submit/create account (input-submit)*/
-	--LoginTextColor: black;        /*To change text color (btn-1_ArClass)(btn-2_ArClass)(.form-title_ArClass)(::placeholder)(forgot-pass_ArClass >a)(.input-submit_ArClass)*/
+	--LoginBtnColor: #21264D;       /*To provide backround color of submit/create account) (input-submit)*/
+	--LoginTextColor: white;        /*To change text color (btn-1_ArClass)(btn-2_ArClass)(.form-title_ArClass)(::placeholder)(forgot-pass_ArClass >a)(input-submit_ArClass)*/
 	
 
 	/*Social Btn*/
 	--LoginSocialSize: 40px; /*To modify the height/width of the (social-login_ArClass)*/
 
-	• To change the color of the SingIn and SignUp Btn (ctrl+F) "desired color"*
+
+	To remove the RightSide with logo
+		--LoginLogoWidth: 0;
+		--LoginLogoRightWidth: 0;
+		--LoginLogoLeftWidth: 100%
+
+
+	• To change the Icon on the right side (crtl+F "form-image-main") and input your prefered Logo
 	• To change the backround (ctrl+f "body") input the desired backround.
 
-* If you wanted to remove the social media links circles just delete or comment out 
-	<div class="social-login_ArClass">
-		<i class="bx bxl-google_ArClass"></i>
-		<i class="bx bxl-facebook_ArClass"></i>
-		<i class="bx bxl-twitetr_ArClass"></i>
-		<i class="bx bxl-github_ArClass"></i>
-	</div>
-  on both <!---Login Form---> and <!---Register Form---> on the Html
-	
 
 	• Structure
 		<body style="--LoginBackgroundImage: url('../../src/ecommerce.png')">
 			<div class="form-container_ArClass">
-				<div class="btn-box_ArClass">
-					<button class="btn btn-1_ArClass" onclick="controller_Btn_SignIn('desired color')" id="login_ArId">Sign In</button>
-					<button class="btn btn-2_ArClass" onclick="controller_Btn_SignUp('desired color')" id="register_ArId">Sign Up</button>
+				<div class="rightLogo_ArClass">
+					<img src="./src/referalimage.png" class="form-image-main">
 				</div>
 				<!---Login Form--->
-				<div class="innerbox_ArClass" id="innerbox_ArId">
+				<div class="innerbox_ArClass">
+					<div class="btn-box_ArClass">
+						<button class="btn btn-1_ArClass" onclick="controller_Btn_SignIn('#21264D')" id="login_ArId">Sign In</button>
+						<button class="btn btn-2_ArClass" onclick="controller_Btn_SignUp('#21264D')" id="register_ArId">Sign Up</button>
+					</div>
 					<div class="col-1_ArClass">
 						<form onsubmit="controller_Btn_Login(event)">
 							<div class="login-form_ArClass">
@@ -135,4 +139,6 @@
 					</div>
 				</div>
 			</div>
-		</body>	
+				<script type="module" src="./Agrid/Client Side/Controller_Btn_SignIn.js"></script>
+				<script type="module" src="./Agrid/Client Side/Controller_Btn_SignUp.js"></script>
+		</body>

@@ -3,16 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>LogIn_Ar</title>
+	<title>ariel</title>
 	<link rel="stylesheet" type="text/css" href="./Module Index/Styles/index.css">
 </head>
 <body style="--LoginBackgroundImage: url('../../src/ecommerce.png')">
 	<div class="form-container_ArClass">
-		<div class="btn-box_ArClass">
-			<button class="btn btn-1_ArClass" onclick="controller_Btn_SignIn('#21264D')" id="login_ArId">Sign In</button>
-			<button class="btn btn-2_ArClass" onclick="controller_Btn_SignUp('#21264D')" id="register_ArId">Sign Up</button>
+		<div class="rightLogo_ArClass">
+			<img src="./src/referalimage.png" class="form-image-main">
 		</div>
-		<div class="innerbox_ArClass" id="innerbox_ArId">
+		<!---Login Form--->
+		<div class="innerbox_ArClass">
+			<div class="btn-box_ArClass">
+				<button class="btn btn-1_ArClass" onclick="controller_Btn_SignIn('#21264D')" id="login_ArId">Sign In</button>
+				<button class="btn btn-2_ArClass" onclick="controller_Btn_SignUp('#21264D')" id="register_ArId">Sign Up</button>
+			</div>
 			<div class="col-1_ArClass">
 				<form onsubmit="controller_Btn_Login(event)">
 					<div class="login-form_ArClass">
@@ -48,8 +52,8 @@
 				</form>
 			</div>
 
+			<!---Register Form--->
 			<div class="col-2_ArClass">
-				<!---Login Form--->
 				<form>
 					<div class="register-form_ArClass">
 						<div class="form-title_ArClass">
@@ -100,13 +104,8 @@
 				</form>
 			</div>
 		</div>
-	</div>	
-	<!-- bector panget -->
-	
-	<script type="module" src="./Module Index/Client Side/Controller_Btn_SignIn.js"></script>
-	<script type="module" src="./Module Index/Client Side/Controller_Btn_SignUp.js"></script>
-	<!--take note auto ajust ung hight ung scroll sa gilid pag maliit-->
-
-
+	</div>
+		<script type="module" src="./Agrid/Client Side/Controller_Btn_SignIn.js"></script>
+		<script type="module" src="./Agrid/Client Side/Controller_Btn_SignUp.js"></script>
 </body>
 </html>

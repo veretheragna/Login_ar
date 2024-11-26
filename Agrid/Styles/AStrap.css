@@ -34,13 +34,37 @@ body {
   display: flex;
   position: relative;
   align-content: center;
-  flex-flow: column;
+  flex-flow: row;
   width: var(--LoginFrameWidth);
   height: var(--LoginFrameHeight);
   flex-shirk: 0;
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 30px;
   backdrop-filter: blur(20px); }
+
+.rightLogo_ArClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: var(--LoginLogoRightWidth);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  border-radius: 0 30% 20% 0;
+  transition: border-radius 0.3s; }
+
+.form-image-main {
+  display: flex;
+  position: relative;
+  object-fit: contain;
+  width: var(--LoginLogoWidth); }
+
+.innerbox_ArClass {
+  position: relative display flex;
+  flex-shirk: 0;
+  width: var(--LoginLogoLeftWidth);
+  flex-flow: row;
+  box-sizing: border-box; }
 
 .btn-box_ArClass {
   display: flex;
@@ -66,24 +90,12 @@ body {
 .btn:hover {
   opacity: 0.75; }
 
-.innerbox_ArClass {
-  position: relative display flex;
-  flex-shirk: 0;
-  width: 800px;
-  box-sizing: border-box; }
-
-#innerbox_ArId {
-  display: flex;
-  flex-flow: row;
-  box-sizing: border-box; }
-
 /*First Colum*/
 .col-1_ArClass {
   position: relative;
-  height: 100%;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
   padding: 0 4vw;
   transition: .5s; }
 
@@ -95,7 +107,7 @@ body {
 /*Second Colum*/
 .col-2_ArClass {
   position: relative;
-  width: 50%;
+  width: 100%;
   padding: 5px;
   display: none; }
 
@@ -222,12 +234,5 @@ body {
 /***********************************************************************************************************************************************************************************************************/
 /*Media Queries*/
 /***********************************************************************************************************************************************************************************************************/
-@media all and (max-height: 700px) {
-  /*#formDisplay_ArId{
-  	position: absolute;
-   	top: 50%;
-   	left: 50%;
-   	transform: translate(10%,);
-  }*/ }
 
 /*# sourceMappingURL=AStrap.css.map */
