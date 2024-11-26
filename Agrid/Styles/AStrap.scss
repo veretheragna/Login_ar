@@ -27,22 +27,19 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	height: 100%;
+	min-height: 100vh;
 
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	overflow-x: hidden;     /* Hide horizontal scrollbar */
-   overflow-y: scroll; /* Add vertical scrollbar */
+   	overflow-y: scroll; /* Add vertical scrollbar */
   	box-sizing: border-box;
-}
-#formDisplay_ArId{
-position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .form-container_ArClass{
 	display: flex;
 	position: relative;
+	align-content: center;
 	flex-flow: column;
 	width: var(--LoginFrameWidth);
 	height: var(--LoginFrameHeight);
@@ -67,7 +64,7 @@ position: absolute;
 	color: #fff;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
-	transition: .2s;
+	transition: .3s;
 }
 .btn-1_ArClass{
 	background: var(--LoginBtnColor);
@@ -96,7 +93,7 @@ position: absolute;
 	align-items: center;
 	width: 50%;
 	padding: 0 4vw;
-	transition: .3s;
+	transition: .5s;
 }
 
 .form-image-main_ArClass{
@@ -121,7 +118,7 @@ position: absolute;
 	align-items: center;
 	width: 100%;
 	padding: 0 5%;
-	transition: .3s;
+	transition: .5s;
 }
 .register-form_ArClass{
 	position: relative;
@@ -161,13 +158,6 @@ position: absolute;
 	color: #fff;
 	font-size: 15px;
 }
-/*.input-box_ArClass .icon_ArClass{
-	position: relative;
-	top: 50%;
-	right: 15px;
-	transform: translateY(-50%);
-	color: #fff;
-}*/
 .forgot-pass_ArClass{
 	display: flex;
 	justify-content: center;
@@ -265,10 +255,10 @@ position: absolute;
 /*Media Queries*/
 /***********************************************************************************************************************************************************************************************************/
 @media all and (max-height:700px){
-	#formDisplay_ArId{
+	/*#formDisplay_ArId{
 		position: absolute;
 	 	top: 50%;
 	 	left: 50%;
-	 	transform: translate(-50%, -35%);
-	}
+	 	transform: translate(10%,);
+	}*/
 }
