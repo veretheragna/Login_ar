@@ -1,10 +1,12 @@
 * Agrid Framework Rules
 	• Always Add the Agrid Folder & src Folder into Project Folder
 	• Follow the Path Order when creating a New Page Folder (Project Folder/Module Folders/Files Folders)
-	• Just copy the Layout design on your scss file and import the Astrap.scss
-		ex. (@import "../../Agrid/Styles/AStrap";)
+	• Just copy the Layout design on your scss file and import the AR_LogIn.scss
+		ex. (@import "../../Agrid/Styles/AR_LogIn";)
 
-* For JavaScript How to
+*Login page Section*
+
+* Login For JavaScript How to
 	• To change the color of SignIn/SignUp (ctrl+f "desired color") and change it to your prefered color.
 	• also add the scrpit at the bottom, for btn SignIn and SignUp
 		<script type="module" src="./Agrid/Client Side/Controller_Btn_SignIn.js"></script>
@@ -142,3 +144,63 @@
 				<script type="module" src="./Agrid/Client Side/Controller_Btn_SignIn.js"></script>
 				<script type="module" src="./Agrid/Client Side/Controller_Btn_SignUp.js"></script>
 		</body>
+
+/***********************************************************************************************************************************************************************************************************/
+*Icons Section*
+* Agrid Framework Rules
+	• Always Add the Agrid Folder & src Folder into Project Folder
+	• Follow the Path Order when creating a New Page Folder (Project Folder/Module Folders/Files Folders)
+	• Just copy the Layout design on your scss file and import the AR_Icon.scss
+		ex. (@import "../../Agrid/Styles/AR_Icon";)
+
+* How to use Layout Login design
+	--IconSize: 130px; /*To set the width and height of the container of the icons(miniTogglebox_ArClass)*/
+	--IconImageSize: 90%; /*To set the width and height of the image (.miniTogglebox_ArClass > img)*/
+	--IconTextSize: 18px; /*To set teh size of the Text (miniTogglebox_ArClass > span)*/
+
+* Just copy the <a> tag to your page and make sure that sile path on the css is correct
+		<a href="" class="miniTogglebox_ArClass">
+			<img src="./src/cashIn.png">
+			<span>Cash In</span>
+		</a>
+
+		*Make sure to update the file path for the image on teh src folder*
+	•Structure
+		<div class="cointainerBox_ArClass">
+			<a href="" class="miniTogglebox_ArClass">
+				<img src="./src/cashIn.png">
+				<span>Cash In</span>
+			</a>
+			<a href="" class="miniTogglebox_ArClass">
+				<img src="./src/icon2.png">
+				<span>Details</span>
+			</a>
+			<a href="" class="miniTogglebox_ArClass">
+				<img src="./src/sendMoney.png">
+				<span>Send Money</span>
+			</a>
+			<a href="" class="miniTogglebox_ArClass">
+				<img src="./src/investment.png">
+				<span>Invest</span>
+			</a>
+			<a href="" class="miniTogglebox_ArClass">
+				<img src="./src/Banktransfer.png">
+				<span>Bank Transfer</span>
+			</a>
+			<a href="" class="miniTogglebox_ArClass">
+				<img src="./src/insure.png">
+				<span>Insure</span>
+			</a>
+			<a href="" class="miniTogglebox_ArClass">
+				<img src="./src/bills.png">
+				<span>Bills</span>
+			</a>
+			<a href="" class="miniTogglebox_ArClass">
+				<img src="./src/rewards.png">
+				<span>Rewards</span>
+			</a>
+			<a href="" class="miniTogglebox_ArClass">
+				<img src="./src/cards.png">
+				<span>Cards</span>
+			</a>
+		</div>
